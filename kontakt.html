@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premuzic Transporti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stilovi za odvajanje forme od margina */
+        #kontakt-forma {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto; /* Centriranje i odvajanje od margina */
+            max-width: 800px; /* Ograničenje širine forme */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #kontakt-forma h2 {
+            margin-bottom: 20px;
+            color: darkred;
+            font-weight: bold;
+        }
+        #kontakt-forma .form-group {
+            margin-bottom: 20px;
+        }
+        #kontakt-forma .btn-primary {
+            background-color: darkred;
+            border-color: darkred;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        #kontakt-forma .btn-primary:hover {
+            background-color: #a52a2a;
+            border-color: #a52a2a;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><img src="Premuzic transporti/logo.png" alt="Logo tvrtke" width="240" height="73" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="usluge.html">Usluge</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="o-nama.html">O Nama</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cijene.html">Cijene</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2>Kontakt</h2>
+    <p>
+        Kontaktirajte nas
+    </p>
+    <ul>
+        <li>Telefon: 042 739307</li>
+        <li>Telefax: 042 739098</li>
+        <li>Osobno na adresi: Ul. Svetog Lovre 2, 42208 Veliki Lovrečan</li>
+        <li>E-mail: <a href="mailto:info@premuzic-transporti.hr">info@premuzic-transporti.hr</a></li>
+        <li>Putem kontaktnog obrasca</li>
+    </ul>
+</div>
+
+<!-- Kontakt forma -->
+<section id="kontakt-forma">
+    <h2>Kontaktirajte Nas</h2>
+    <form>
+        <div class="form-group">
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" class="form-control" id="ime" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="poruka">Poruka:</label>
+            <textarea class="form-control" id="poruka" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Pošalji</button>
+    </form>
+</section>
+
+<footer class="footer text-center">
+    <p>&copy; 2009 Premužić Transporti d.o.o.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
